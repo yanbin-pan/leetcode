@@ -1,0 +1,16 @@
+class Solution:
+    """
+    Take a bottom-top approach, from the last and second last step it would take only 1 and 1 steps to reach the top for any n
+
+    from the n-2 step it's f(n-1) + f(n) combinations
+
+    O(n)
+    """
+    def climbStairs(self, n: int) -> int:
+        one, two = 1, 1
+        for i in range(n-1):
+            temp = one
+            one = one + two
+            two = temp
+        return one
+        

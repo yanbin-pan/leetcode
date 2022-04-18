@@ -1,5 +1,7 @@
 class Solution:
     """Palindrome is a string that reads the same from left to right and right to left
+    
+    has a O(n^2) complexity
     """
     def longestPalindrome(self, s: str) -> str:
         """Returns the longest palindrome

@@ -1,5 +1,7 @@
 package longestPalindrome
 
+// has a O(n^2) complexity
+
 func longestPalindrome(s string) string {
 	res := ""
 	resLen, l, r := 0, 0, 0
